@@ -15,10 +15,10 @@ const ContactSection = () => {
                                                            <span><BsEnvelope /></span>
                                                             <p>support@erebuserm.com</p>
                                                    </div>
-                                                   <div className="option-block" data-aos="zoom-in-left">
+                                                   {/* <div className="option-block" data-aos="zoom-in-left">
                                                             <span><MdLocalPhone /></span>
                                                             <p>+1 (200) 768 555</p>
-                                                   </div>
+                                                   </div> */}
                                          </div>
                                </div>
 
