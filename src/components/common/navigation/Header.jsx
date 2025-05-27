@@ -1,11 +1,14 @@
 import { Link } from "react-scroll"
 import logo from "../../../assets/logo.PNG"
-import { NavLink } from "react-router-dom"
 import { TbMenu4 } from "react-icons/tb"
+import { useContext } from "react"
+import { sidebarContext } from "./navcontext"
 
 const Header = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [ sidebarStatus, setSidebarStatus ] = useContext(sidebarContext)
   return (
-    <header>
+    <header data-aos="fade-in">
             <div className="inner-row">
                       <div className="header-content">
                                 <Link to="home" smooth={true} className="logo">
@@ -14,6 +17,7 @@ const Header = () => {
 
                                 <nav>
                                          <ul>
+                                                  <li><Link to="home" activeClass="active" className="active" spy={true} smooth={true}>Home</Link></li>
                                                   <li><Link to="about" smooth={true}>About</Link></li>
                                                   <li><Link to="features" smooth={true}>Features</Link></li>
                                                   <li><Link to="solution" smooth={true}>Solution</Link></li>
@@ -23,9 +27,9 @@ const Header = () => {
 
                                 <div className="header-actions">
                                             <button>Sign in</button>
-                                            <Link to="contact">Request a Demo</Link>
+                                            <Link to="contact"  smooth={true}>Request a Demo</Link>
 
-                                            <span><TbMenu4 /></span>
+                                            <span onClick={() => setSidebarStatus(true)}><TbMenu4 /></span>
                                 </div>
                       </div>
             </div>
