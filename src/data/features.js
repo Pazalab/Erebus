@@ -15,24 +15,24 @@ export const features = [
         id: 2,
         title: "Data-Driven Insights",
         description: "Make smarter, faster decisions with real-time analytics that give you full visibility into payroll, project costs, and accounts payable. With Erebus, you always know where time and money are being spent.",
-        image: "/illustrations/dum2.png"
+        image: "/illustrations/data-driven.png"
     },
     {
         id: 3,
         title: "Enhanced Onboarding & Offboarding",
         description: "Give your contractors a smooth start and a respectful exit with easy, guided workflows that handle everything with documentation to system access—keeping things compliant and professional.",
-        image: "/illustrations/dum3.png"
+        image: "/illustrations/contract.png"
     },
     {
         id: 4,
         title: "Contract Management",
         description: "Keep all your contracts organized, accessible, and up to date in one place. Stay on top of terms, renewals, and compliance with less effort and zero confusion.",
-        image: "/illustrations/dum3.png"
+        image: "/illustrations/contract.png"
     },
     {
         id: 5,
         title: "Built-in Invoincing Processing",
         description: "Let Erebus handle your invoicing. Automatically generate and track invoices based on approved hours and contract terms—saving you hours of manual work and reducing billing errors.",
-        image: "/illustrations/dum1.png"
+        image: "/illustrations/invoice.png"
     }
 ]

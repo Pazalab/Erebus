@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import dummy from "../../assets/dummy.png"
+import dummy from "../../assets/dashboard2.png"
 import { GoArrowUpRight } from "react-icons/go";
 import FaqSection from "./FaqSection";
 
@@ -16,13 +16,13 @@ const SolutionSection = () => {
                                    <div className="solution-stage" data-aos="zoom-in">
                                             <div className="solution-overlay">
                                                         <div className="overlay-texts">
-                                                                 <h3>Try Erebus before creating an Account</h3>
-                                                                 <Link to={"/"}>View Demo <span><GoArrowUpRight /></span></Link>
+                                                                 <h3>Explore Erebus in Action</h3>
+                                                                 <Link to={"/"}>Play Demo <span><GoArrowUpRight /></span></Link>
                                                         </div>
                                             </div>
                                               <img src={dummy} alt="" />
                                    </div>
-
+                                  
                                    <FaqSection />
                        </div>
              </div>

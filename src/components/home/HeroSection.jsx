@@ -1,5 +1,6 @@
 import { Link } from "react-scroll"
-import dummy from "../../assets/dummy.png"
+// import dummy from "../../assets/dummy.png"
+import hero from "../../assets/dashboard2.png"
 const HeroSection = () => {
   return (
     <div className="hero-section">
@@ -10,13 +11,16 @@ const HeroSection = () => {
                                   <p data-aos="zoom-in">Easily manage your team, stay on top of compliance, and get more done with smart automation and real-time insights—all in one place.</p>
 
                                   <div className="hero-btns">
-                                            <Link to="" data-aos="zoom-in-right">Try it out</Link>
-                                            <Link to="" data-aos="zoom-in-left">How it works</Link>
+                                         <Link to="solution" smooth={true} data-aos="zoom-in-left">How it works</Link>
+                                            {/* <Link to="/solution" data-aos="zoom-in-right">Try it out</Link> */}
+                                            
                                   </div>
                         </div>
 
                         <div className="hero-image" data-aos="zoom-in-up">
-                                  <img src={dummy} alt="" />
+                                  <div className="hero-image-inner">
+                                           <img src={hero} alt="" />
+                                  </div>
                         </div>
               </div>
     </div>
