@@ -6,7 +6,7 @@ import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 
 const SolutionSection = () => {
-  const [ modalActive, setModalActive ] = useState(true)
+  const [ modalActive, setModalActive ] = useState(false)
   return (
     <div className='solution-section'>
              <div className="inner-row">
@@ -29,7 +29,7 @@ const SolutionSection = () => {
                                        <div  className={ modalActive ? 'solution-video active' : 'solution-video'}>
                                                 <span className="video-close-btn" onClick={()=> setModalActive(false)}><CgClose /></span>
                                               <div className="video-body">
-                                                      <iframe src={modalActive ? "https://res.cloudinary.com/dq6subhaj/video/upload/v1748519105/Erebus_New_Timesheet_For_Regular_Hours_cignif.mp4": ""} allowFullScreen ></iframe>
+                                                      <iframe src={modalActive ? "https://res.cloudinary.com/dq6subhaj/video/upload/v1748519105/Erebus_New_Timesheet_For_Regular_Hours_cignif.mp4": ""} allow="autoplay" allowFullScreen ></iframe>
                                               </div>
                                      </div>
                                   
