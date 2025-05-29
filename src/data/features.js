@@ -3,13 +3,13 @@ export const features = [
         id: 0,
         title: "Simplified Time Tracking",
         description: "Empower your contractors to log hours quickly and confidently with an intuitive interface that reduces errors and saves everyone time—no more chasing down late or messy timesheets.",
-        image: "/illustrations/dum0.jpg"
+        image: "/illustrations/timesheet.png"
     },
     {
         id: 1,
         title: "Streamlined Approvals",
         description: "Take the stress out of approvals with automated workflows that route timesheets to the right people instantly. Keep your payroll process moving and your projects on schedule without manual bottlenecks.",
-        image: "/illustrations/dum1.png"
+        image: "/illustrations/invoice.png"
     },
     {
         id: 2,
