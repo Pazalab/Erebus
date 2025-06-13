@@ -3,10 +3,12 @@ import logo from "../../../assets/logo.PNG"
 import { TbMenu4 } from "react-icons/tb"
 import { useContext } from "react"
 import { sidebarContext } from "./navcontext"
+import { useNavigate } from "react-router-dom"
 
 const Header = () => {
   // eslint-disable-next-line no-unused-vars
   const [ sidebarStatus, setSidebarStatus ] = useContext(sidebarContext)
+  const navigate = useNavigate();
   return (
     <header data-aos="fade-in">
             <div className="inner-row">
@@ -26,7 +28,7 @@ const Header = () => {
                                 </nav>
 
                                 <div className="header-actions">
-                                            <button>Sign in</button>
+                                            <button onClick={() => navigate("/auth/login")}>Sign in</button>
                                             <Link to="contact"  smooth={true}>Request a Demo</Link>
 
                                             <span onClick={() => setSidebarStatus(true)}><TbMenu4 /></span>

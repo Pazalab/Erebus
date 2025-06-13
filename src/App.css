@@ -67,7 +67,7 @@ header{
 }
 
 .header-content nav ul,
-.header-content .header-actions{
+.header-actions{
      display: flex;
      gap: 30px;
      align-items: center;
@@ -341,8 +341,9 @@ footer{
 }
 
 @media(max-width: 1090px){
-      .header-content nav ul{
-           display: none;
+      .header-content nav ul,
+      .header-2-column nav ul{
+           display: none !important;
       }
       .header-actions span{
            display: flex;
