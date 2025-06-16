@@ -599,16 +599,90 @@
       color: rgb(60,60, 60);
 }
 
+.useful-videos-row{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 30px;
+}
 
+.video-moja{
+      background: #ff9f1820;;
+      padding: 50px 30px;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+}
+.video-moja img{
+       height: 45px;
+       width: 45px;
+       object-fit: contain;
+       filter: invert(63%) sepia(81%) saturate(865%) hue-rotate(344deg) brightness(91%) contrast(86%);
+       -webkit-filter: invert(63%) sepia(81%) saturate(865%) hue-rotate(344deg) brightness(91%) contrast(86%);
+}
+.video-moja-texts h2{
+      color: rgb(30, 30, 30);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 32px;
+      font-weight: 500;
+}
 
+.video-moja-texts h2 span{
+      display: flex;
+      margin-top: 8px;
+}
 
+.video-moja-texts h3{
+      font-size: 25px;
+      font-weight: 400;
+      width: 80%;
+}
 
+.overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(171, 116, 5, 0.496);
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.8s ease;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      opacity: 0;
+      cursor: pointer;
+}
+.overlay span{
+       color: white;
+       width: 45px;
+       height: 45px;
+       border: 2px solid;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 45px;
+       -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+       -ms-border-radius: 45px;
+       -o-border-radius: 45px;
+}
 
-
-
-
-
-
+.video-moja:hover .overlay{
+      opacity: 1;
+}
 
 .contact-section{
       padding: 100px 0;
@@ -790,7 +864,8 @@
       .features-list,
       .solution-intro,
       .contact-intro,
-      .contact-form{
+      .contact-form,
+      .useful-videos-intro{
              width: 100%;
       }
       .hero-texts h1{
@@ -807,6 +882,20 @@
        .faq-section-content{
               grid-template-columns: 1fr;
               gap: 30px;
+      }
+      .video-moja{
+             flex-direction: column;
+             align-items: flex-start;
+             gap: 10px
+      }
+      .video-moja-texts h2{
+              font-size: 28px;
+      }
+      .video-moja-texts h2 span{
+            margin-top: 5px;
+      }
+      .video-moja-texts h3{
+            font-size: 20px;
       }
 }
 
@@ -839,14 +928,25 @@
               align-items: flex-start;
               gap: 10px;
        }
+
+       .useful-videos-row{
+             grid-template-columns: 1fr 1fr;
+       }
+       .video-moja-texts h3{
+              width: 100%;
+       }
 }
 
 @media(max-width: 550px){
        .hero-texts h1{
               font-size: 45px;
        }
+       .useful-videos-intro h2{
+              font-size: 28px;;
+       }
        .hero-texts p,
-       .features-intro p{
+       .features-intro p,
+       .useful-videos-intro p{
               font-size: 17px;
               width: 100%;
        }
@@ -856,4 +956,7 @@
        .feature-image{
              width: 100%;
        }
+         .useful-videos-row{
+              grid-template-columns: 1fr;
+         }
 }
