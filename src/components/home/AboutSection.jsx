@@ -4,7 +4,7 @@ const AboutSection = () => {
     <div className="about-section">
              <div className="inner-row">
                           <div className="about-section-content">
-                                    <h3 className="welcome" data-aos="zoom-in-down">At Erebus, we believe that managing teams and projects should be <span className="bluish">seamless, efficient and data-driven.</span> Our platform is designed to simplify HR operations, automate repetitive tasks, and provide real-time insights to enhance <span className="orangish">workforce productivity</span>.</h3>
+                                    <h3 className="welcome" data-aos="zoom-in-down">We believe that managing teams and projects should be <span className="bluish">seamless, efficient and data-driven.</span> Our platform is designed to simplify HR operations, automate repetitive tasks, and provide real-time insights to enhance <span className="orangish">workforce productivity</span>.</h3>
                           </div>
 
                           <div className="benefits-section">

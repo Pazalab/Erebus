@@ -4,6 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import FaqSection from "./FaqSection";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
+import UsefulVideos from "../common/UsefulVideos";
 
 const SolutionSection = () => {
   const [ modalActive, setModalActive ] = useState(false)
@@ -34,6 +35,8 @@ const SolutionSection = () => {
                                      </div>
                                   
                                    <FaqSection />
+
+                                   {/* <UsefulVideos /> */}
                        </div>
              </div>
     </div>

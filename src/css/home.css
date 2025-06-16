@@ -579,6 +579,36 @@
       line-height: 1.6;
 }
 
+.useful-videos{
+      margin-top: 30px;
+}
+
+.useful-videos-intro{
+       width: 900px;
+}
+
+.useful-videos-intro h2{
+       font-size: 36px;
+       font-weight: 400;
+       margin-bottom: 10px;
+}
+.useful-videos-intro p{
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: rgb(60,60, 60);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .contact-section{
       padding: 100px 0;
