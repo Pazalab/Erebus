@@ -359,9 +359,13 @@ footer{
           flex-direction: column;
           gap: 20px;
     }
+
 }
 @media(max-width: 550px){
      .copyright{
             flex-direction: column;
+     }
+     .sidebar-content{
+           width: 100%;
      }
 }

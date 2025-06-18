@@ -4,6 +4,7 @@ import { Link } from "react-scroll"
 import gsap from "gsap"
 import { useContext, useEffect, useRef } from "react"
 import { sidebarContext } from "./navcontext"
+import { useNavigate } from "react-router-dom"
 
 const Sidebar = () => {
     const [ sidebarStatus, setSidebarStatus ] = useContext(sidebarContext);
@@ -45,6 +46,7 @@ const Sidebar = () => {
           }, 1200)
     }
 
+    const navigate = useNavigate();
   return (
     <div ref={sidebarRef} className="sidebar-section">
                 <div className="sidebar-overlay"></div>
@@ -63,7 +65,7 @@ const Sidebar = () => {
                                    </ul>
                             </div>
                             <div className="sidebar-extra">
-                                         <button>Sign in</button>
+                                         <button onClick={() => navigate("/auth/login")}>Sign in</button>
                                         <Link to="contact" smooth={true} onClick={handleCloseSidebar}>Request a Demo</Link>
                             </div>
                 </div>
